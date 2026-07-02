@@ -5,20 +5,11 @@ N:Салават;;;;
 ORG:МебельДан
 TITLE:Менеджер
 TEL;TYPE=CELL,VOICE:+79600492284
-item1.URL:https://t.me
-item1.X-ABLabel:Telegram (чат)
-item2.URL:https://max.ru
-item2.X-ABLabel:Max
-item3.URL:https://imoim.net
-item3.X-ABLabel:IMO
-item4.URL:https://instagram.com
-item4.X-ABLabel:Instagram
-item5.URL:https://t.me
-item5.X-ABLabel:Telegram (канал)
-item6.URL:https://yandex.com
-item6.X-ABLabel:Яндекс.Карты
-item7.URL:https://2gis.ru
-item7.X-ABLabel:2ГИС
+X-SOCIALPROFILE;type=Telegram;x-user=Telegram (чат):https://t.me
+X-SOCIALPROFILE;type=Max;x-user=Max:https://max.ru
+X-SOCIALPROFILE;type=IMO;x-user=IMO:https://imoim.net
+X-SOCIALPROFILE;type=Instagram;x-user=Instagram:https://instagram.com
+X-SOCIALPROFILE;type=Telegram;x-user=Telegram (канал):https://t.me
 ADR;TYPE=WORK:;;офис МебельДан;Казань;;;Россия
-NOTE:Режим работы: Пн-Пт 9:00-18:00\nПо предварительной записи
+NOTE:Режим работы: Пн-Пт 9:00-18:00\nПо предварительной записи\n\n🗺️ КАРТЫ ОФИСА:\nЯндекс.Карты: https://yandex.com\n2ГИС: https://2gis.ru
 END:VCARD
