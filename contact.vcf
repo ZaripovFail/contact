@@ -1,0 +1,19 @@
+BEGIN:VCARD
+VERSION:3.0
+FN:Салават
+N:Салават;;;;
+ORG:МебельДан
+TITLE:Менеджер
+TEL;TYPE=CELL,VOICE:+79600492284
+X-SOCIALPROFILE;type=Telegram;x-user=salavatfazliev:https://t.me
+X-SOCIALPROFILE;type=Max:https://max.ru
+X-SOCIALPROFILE;type=IMO:https://imoim.net
+X-SOCIALPROFILE;type=Instagram:https://instagram.com
+X-SOCIALPROFILE;type=Telegram;x-user=mebeldankazan:https://t.me
+item1.URL:https://yandex.com
+item1.X-ABLabel:Яндекс.Карты
+item2.URL:https://2gis.ru
+item2.X-ABLabel:2ГИС
+ADR;TYPE=WORK;PARCEL;POSTAL:;;офис МебельДан;Казань;;;Россия
+NOTE:Режим работы: Пн-Пт 9:00-18:00\nПо предварительной записи
+END:VCARD
