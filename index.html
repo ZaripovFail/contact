@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сохранить контакт Салавата</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f6f9;
+        }
+        .card {
+            background: white;
+            padding: 40px 30px;
+            border-radius: 24px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            text-align: center;
+            max-width: 320px;
+            width: 100%;
+        }
+        .avatar {
+            width: 80px;
+            height: 80px;
+            background: #007AFF;
+            color: white;
+            font-size: 32px;
+            font-weight: bold;
+            line-height: 80px;
+            border-radius: 50%;
+            margin: 0 auto 20px;
+        }
+        h2 { margin: 0 0 8px 0; font-size: 22px; color: #1c1c1e; }
+        p { margin: 0 0 24px 0; color: #8e8e93; font-size: 15px; }
+        .btn {
+            background-color: #007AFF;
+            color: white;
+            border: none;
+            padding: 16px 32px;
+            font-size: 16px;
+            font-weight: 600;
+            border-radius: 14px;
+            cursor: pointer;
+            text-decoration: none;
+            display: block;
+            transition: background 0.2s, transform 0.1s;
+        }
+        .btn:active { transform: scale(0.98); }
+        .subtitle { color: #8e8e93; font-size: 12px; margin-top: 16px; margin-bottom: 0; }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <div class="avatar">С</div>
+        <h2>Салават</h2>
+        <p>Менеджер МебельДан</p>
+        
+        <a class="btn" id="vcardLink" href="contact.vcf" download="Salavat_MebelDan.vcf">📇 Сохранить контакт</a>
+        
+        <p class="subtitle">Контакт запишется в телефонную книгу</p>
+    </div>
+
+    <script>
+        const linkElement = document.getElementById("vcardLink");
+        const userAgent = window.navigator.userAgent.toLowerCase();
+        
+        // Для Android запускаем скачивание ФАЙЛА автоматически без клика
+        if (userAgent.includes("android")) {
+            window.addEventListener("DOMContentLoaded", () => {
+                setTimeout(() => {
+                    linkElement.click();
+                }, 400);
+            });
+        }
+        // На iOS автоклики заблокированы системой Apple. 
+        // Клиент нажмет кнопку сам, Safari перейдет по прямой ссылке на реальный файл contact.vcf 
+        // и мгновенно откроет системную карточку с красивыми кнопками мессенджеров и соцсетей.
+    </script>
+</body>
+</html>
